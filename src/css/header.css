@@ -1,0 +1,52 @@
+.header {
+	padding: 30px 15px;
+}
+
+.header__city-search-bar {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	filter: drop-shadow(5px 5px 5px var(--shadow));
+}
+
+.header__input {
+	background: var(--white);
+	border: none;
+	border-radius: 50px 0 0 50px;
+	margin-right: -15px;
+	padding: 10px;
+	width: 30em;
+}
+
+.header__button {
+	align-items: center;
+	border: none;
+	border-radius: 100%;
+	background: var(--primary);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	float: left;
+	margin-rigth: 20px;
+	transition: all 0.8s;
+}
+
+.header__button:hover {
+	background: var(--primary-hover);
+	transform: scale(1.1);
+}
+
+.header__current-date {
+	margin-top: 1.5em;
+	color: var(--gray);
+}
+
+.header__city-name {
+	color: var(--primary);
+	font-size: 1.3rem;
+}
+
+.bottom-container {
+	border-radius: 20px 20px 0 0;
+}
