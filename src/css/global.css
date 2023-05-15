@@ -2,9 +2,12 @@
 	box-sizing: border-box;
 	padding: 0;
 	--background: #e6ecfa;
+	--background-dark: #232527;
 	--white: #fdfdfd;
 	--primary: #280061;
+	--primary-dark: #bf91ff;
 	--gray: #5e5e5e;
+	--light-gray: #a1a1a1;
 	--shadow: rgba(9, 16, 24, 0.15);
 	--primary-hover: #40009b;
 }
@@ -15,4 +18,9 @@ body {
 	max-width: 600px;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
+}
+
+body.dark {
+	background: var(--background-dark);
+	color: var(--white);
 }

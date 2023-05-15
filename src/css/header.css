@@ -18,6 +18,15 @@
 	width: 30em;
 }
 
+.header__input.dark {
+	background: var(--gray);
+	color: var(--white);
+}
+
+.header__input.dark::placeholder {
+	color: var(--white);
+}
+
 .header__button {
 	align-items: center;
 	border: none;
@@ -32,19 +41,32 @@
 	transition: all 0.8s;
 }
 
+.header__button.dark {
+	background: var(--primary-dark);
+}
+
 .header__button:hover {
 	background: var(--primary-hover);
 	transform: scale(1.1);
 }
 
 .header__current-date {
-	margin-top: 1.5em;
 	color: var(--gray);
+	margin-top: 1.5em;
+	font-size: 0.9em;
+}
+
+.header__current-date.dark {
+	color: var(--light-gray);
 }
 
 .header__city-name {
 	color: var(--primary);
 	font-size: 1.3rem;
+}
+
+.header__city-name.dark {
+	color: var(--primary-dark);
 }
 
 .bottom-container {
