@@ -1,0 +1,32 @@
+.current-temperature {
+   align-items: center;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   margin-bottom: 4em;
+}
+
+.current-temperature__description {
+   font-size: 1.4em;
+   margin-bottom: 0.3em;
+}
+
+.current-temperature__info-label {
+   color: var(--gray);
+   font-size: 0.9em;
+   line-height: 0.1;
+}
+
+.current-temperature__info-label.dark {
+   color: var(--light-gray);
+}
+
+.current-temperature__current-temperature {
+   color: var(--primary);
+   font-size: 1.4em;
+   font-weight: 700;
+}
+
+.current-temperature__current-temperature.dark {
+   color: var(--primary-dark);
+}
