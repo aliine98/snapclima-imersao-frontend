@@ -1,5 +1,43 @@
+/* Light mode */
+
 .header {
 	padding: 30px 15px;
+}
+
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.menu__button {
+	background: var(--primary);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	display: grid;
+	padding: 8px;
+	place-items: center;
+}
+
+.button__sun {
+	display: none;
+}
+
+.button__moon {
+	filter: invert(98%) sepia(88%) saturate(586%) hue-rotate(177deg) brightness(99%) contrast(97%);
+}
+
+.menu__socials {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1em;
+}
+
+.socials__github, .socials__linkedin {
+	filter: invert(10%) sepia(66%) saturate(3175%) hue-rotate(260deg) brightness(97%) contrast(134%);
 }
 
 .header__city-search-bar {
@@ -18,15 +56,6 @@
 	width: 30em;
 }
 
-.header__input.dark {
-	background: var(--gray);
-	color: var(--white);
-}
-
-.header__input.dark::placeholder {
-	color: var(--white);
-}
-
 .header__button {
 	align-items: center;
 	border: none;
@@ -41,23 +70,10 @@
 	transition: all 0.8s;
 }
 
-.header__button.dark {
-	background: var(--primary-dark);
-}
-
-.header__button:hover {
-	background: var(--primary-hover);
-	transform: scale(1.1);
-}
-
 .header__current-date {
 	color: var(--gray);
 	margin-top: 1.5em;
 	font-size: 0.9em;
-}
-
-.header__current-date.dark {
-	color: var(--light-gray);
 }
 
 .header__city-name {
@@ -65,10 +81,50 @@
 	font-size: 1.3rem;
 }
 
-.header__city-name.dark {
-	color: var(--primary-dark);
+.header__button:hover {
+	background: var(--primary-hover);
+	transform: scale(1.1);
 }
 
-.bottom-container {
-	border-radius: 20px 20px 0 0;
+/* Dark mode */
+
+.dark-mode .menu__button {
+	background: var(--primary-dark);
+}
+
+.dark-mode .button__sun {
+	display: block;
+}
+
+.dark-mode .button__moon {
+	display: none;
+}
+
+.dark-mode .socials__github, .dark-mode .socials__linkedin {
+	filter: invert(59%) sepia(20%) saturate(2153%) hue-rotate(216deg) brightness(97%) contrast(110%);
+}
+
+.dark-mode .header__input {
+	background: var(--gray);
+	color: var(--white);
+}
+
+.dark-mode .header__input::placeholder {
+	color: var(--white);
+}
+
+.dark-mode .header__button {
+	background: var(--primary-dark);
+}
+
+.dark-mode .header__button:hover {
+	background: var(--primary-dark-hover);
+}
+
+.dark-mode .header__current-date {
+	color: var(--light-gray);
+}
+
+.dark-mode .header__city-name {
+	color: var(--primary-dark);
 }

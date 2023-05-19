@@ -2,14 +2,16 @@
 	box-sizing: border-box;
 	padding: 0;
 	--background: #e6ecfa;
-	--background-dark: #232527;
+	--background-dark: #0f1216;
 	--white: #fdfdfd;
 	--primary: #280061;
-	--primary-dark: #bf91ff;
-	--gray: #5e5e5e;
+	--primary-dark: #b682ff;
+	--alt-primary-dark: #d2b2ff;
+	--gray: #3a3a3a;
 	--light-gray: #a1a1a1;
 	--shadow: rgba(9, 16, 24, 0.15);
-	--primary-hover: #40009b;
+	--primary-hover: #4800ad;
+	--primary-dark-hover: #b95dff;
 }
 
 body {
@@ -20,7 +22,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-body.dark {
+body.dark-mode {
 	background: var(--background-dark);
 	color: var(--white);
+}
+
+a {
+	text-decoration: none;
 }
