@@ -1,3 +1,5 @@
+/* Light mode */
+
 .current-temperature {
    align-items: center;
    display: flex;
@@ -17,16 +19,18 @@
    line-height: 0.1;
 }
 
-.current-temperature__info-label.dark {
-   color: var(--light-gray);
-}
-
 .current-temperature__current-temperature {
    color: var(--primary);
    font-size: 1.4em;
    font-weight: 700;
 }
 
-.current-temperature__current-temperature.dark {
+/* Dark mode */
+
+.dark-mode .current-temperature__info-label {
+   color: var(--light-gray);
+}
+
+.dark-mode .current-temperature__current-temperature {
    color: var(--primary-dark);
 }
