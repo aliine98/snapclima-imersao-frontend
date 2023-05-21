@@ -21,6 +21,10 @@
 	place-items: center;
 }
 
+:is(.menu__button, .header__button, .socials__linkedin, .socials__github) {
+	transition: all 0.8s;
+}
+
 .button__sun {
 	display: none;
 }
@@ -36,8 +40,13 @@
 	gap: 1em;
 }
 
-.socials__github, .socials__linkedin {
+.socials__github,
+.socials__linkedin {
 	filter: invert(10%) sepia(66%) saturate(3175%) hue-rotate(260deg) brightness(97%) contrast(134%);
+}
+
+:hover:where(.socials__github, .socials__linkedin) {
+	filter: invert(11%) sepia(80%) saturate(5478%) hue-rotate(266deg) brightness(92%) contrast(114%);
 }
 
 .header__city-search-bar {
@@ -56,6 +65,10 @@
 	width: 30em;
 }
 
+.header__input:focus-visible {
+	outline: var(--light-gray) solid thin;
+}
+
 .header__button {
 	align-items: center;
 	border: none;
@@ -67,7 +80,14 @@
 	padding: 10px;
 	float: left;
 	margin-rigth: 20px;
-	transition: all 0.8s;
+}
+
+.header__button:hover {
+	transform: scale(1.1);
+}
+
+:hover:where(.menu__button, .header__button) {
+	background: var(--primary-hover);
 }
 
 .header__current-date {
@@ -81,15 +101,14 @@
 	font-size: 1.3rem;
 }
 
-.header__button:hover {
-	background: var(--primary-hover);
-	transform: scale(1.1);
-}
-
 /* Dark mode */
 
-.dark-mode .menu__button {
+.dark-mode :where(.menu__button, .header__button) {
 	background: var(--primary-dark);
+}
+
+.dark-mode :hover:where(.menu__button, .header__button) {
+	background: var(--primary-dark-hover);
 }
 
 .dark-mode .button__sun {
@@ -100,8 +119,12 @@
 	display: none;
 }
 
-.dark-mode .socials__github, .dark-mode .socials__linkedin {
+.dark-mode :where(.socials__github, .socials__linkedin) {
 	filter: invert(59%) sepia(20%) saturate(2153%) hue-rotate(216deg) brightness(97%) contrast(110%);
+}
+
+.dark-mode :hover:where(.socials__github, .socials__linkedin) {
+	filter: invert(41%) sepia(12%) saturate(6919%) hue-rotate(246deg) brightness(100%) contrast(103%);
 }
 
 .dark-mode .header__input {
@@ -110,15 +133,7 @@
 }
 
 .dark-mode .header__input::placeholder {
-	color: var(--white);
-}
-
-.dark-mode .header__button {
-	background: var(--primary-dark);
-}
-
-.dark-mode .header__button:hover {
-	background: var(--primary-dark-hover);
+	color: var(--light-gray);
 }
 
 .dark-mode .header__current-date {
