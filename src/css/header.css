@@ -136,6 +136,10 @@
 	color: var(--light-gray);
 }
 
+.dark-mode .header__button-icon {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(8%) hue-rotate(173deg) brightness(104%) contrast(103%);
+}
+
 .dark-mode .header__current-date {
 	color: var(--light-gray);
 }
