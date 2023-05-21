@@ -1,0 +1,66 @@
+/* Light mode */
+
+.bottom-container {
+	background: var(--white);
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0 4px 30px 2px rgba(42, 3, 68, 0.2);
+	padding: 15px;
+}
+
+.temperature-details,
+.sunset-sunrise {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.temperature-details__item,
+.sunset-sunrise__item {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 0.6em;
+}
+
+.temperature-details__label {
+	margin-bottom: 5px;
+	color: var(--gray);
+}
+
+.sunset-sunrise__label {
+	filter: brightness(0) saturate(100%) invert(22%) sepia(14%) saturate(0%) hue-rotate(147deg) brightness(95%) contrast(98%);
+}
+
+.temperature-details__value,
+.sunset-sunrise__value {
+	color: var(--primary);
+	font-weight: 700;
+}
+
+.temperature-details__item:nth-child(n+1):nth-child(-n+2),
+.sunset-sunrise__item:first-child {
+	border-right: 1px solid var(--light-gray);
+}
+
+.sunset-sunrise {
+	margin-top: 2em;
+}
+
+/* Dark mode */
+
+.dark-mode .bottom-container {
+	background: var(--gray);
+}
+
+.dark-mode .temperature-details__label {
+	color: var(--white);
+}
+
+.dark-mode .temperature-details__value, .dark-mode .sunset-sunrise__value {
+	color: var(--alt-primary-dark);
+}
+
+.dark-mode .sunset-sunrise__icon {
+	filter: brightness(0) saturate(30%) invert(100%) sepia(0%) saturate(0%) hue-rotate(352deg) brightness(109%) contrast(98%);
+}
