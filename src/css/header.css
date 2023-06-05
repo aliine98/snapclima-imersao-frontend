@@ -1,14 +1,14 @@
 /* Light mode */
 
 .header {
-	padding: 30px 15px;
+	padding: 20px 15px;
 }
 
 .header__menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .menu__button {
@@ -94,6 +94,7 @@
 	color: var(--gray);
 	margin-top: 1.5em;
 	font-size: 0.9em;
+	text-transform: capitalize;
 }
 
 .header__city-name {
