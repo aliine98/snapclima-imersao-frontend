@@ -60,8 +60,10 @@
 	background: var(--white);
 	border: none;
 	border-radius: 50px 0 0 50px;
+	caret-color: var(--primary);
 	margin-right: -15px;
 	padding: 10px;
+	transition: all 0.8s;
 	width: 30em;
 }
 
@@ -80,10 +82,11 @@
 	padding: 10px;
 	float: left;
 	margin-rigth: 20px;
+	z-index: 1;
 }
 
 .header__button:hover {
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 
 :hover:where(.menu__button, .header__button) {
@@ -130,6 +133,7 @@
 
 .dark-mode .header__input {
 	background: var(--gray);
+	caret-color: var(--primary-dark);
 	color: var(--white);
 }
 
