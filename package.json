@@ -1,6 +1,8 @@
 {
   "type": "module",
   "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-plugin-import": "^2.25.2",
     "normalize.css": "^8.0.1"
   }
 }
