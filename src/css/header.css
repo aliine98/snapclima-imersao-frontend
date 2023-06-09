@@ -93,6 +93,10 @@
 	background: var(--primary-hover);
 }
 
+.header__current-date, .header__city-name {
+	font-family: 'Ubuntu';
+}
+
 .header__current-date {
 	color: var(--gray);
 	margin-top: 1.5em;

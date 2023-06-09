@@ -12,7 +12,7 @@
 		<link rel="manifest" href="./src/assets/site.webmanifest" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap"
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Ubuntu:wght@400;500&display=swap"
 			rel="stylesheet">
 		<link rel="stylesheet" href="./src/css/normalize.css">
 		<link rel="stylesheet" href="./src/css/global.css">
@@ -53,31 +53,31 @@
 			<img class="current-temperature__weather-icon" src="./src/assets/loading-icon.svg" alt="Carregando" />
 			<div class="current-temperature__description">...</div>
 			<p class="current-temperature__info-label">Tempo agora</p>
-			<div class="current-temperature__current-temperature">...</div>
+			<div class="current-temperature__value">...</div>
 		</section>
 		<div class="bottom-container">
 			<section class="temperature-details">
 				<div class="temperature-details__item">
 					<p class="temperature-details__label">Vento</p>
-					<div class="temperature-details__value">...</div>
+					<div class="temperature-details__value" id="wind">...</div>
 				</div>
 				<div class="temperature-details__item">
 					<p class="temperature-details__label">Sensação</p>
-					<div class="temperature-details__value">...</div>
+					<div class="temperature-details__value" id="feels-like">...</div>
 				</div>
 				<div class="temperature-details__item">
 					<p class="temperature-details__label">Umidade</p>
-					<div class="temperature-details__value">...</div>
+					<div class="temperature-details__value" id="humidity">...</div>
 				</div>
 			</section>
 			<section class="sunset-sunrise">
 				<div class="sunset-sunrise__item">
 					<img class="sunset-sunrise__icon" src="./src/assets/sunrise.svg" alt="Nascer do sol" />
-					<div class="sunset-sunrise__value">...</div>
+					<div class="sunset-sunrise__value" id="sunrise">...</div>
 				</div>
 				<div class="sunset-sunrise__item">
 					<img class="sunset-sunrise__icon" src="./src/assets/sunset.svg" alt="Pôr do sol" />
-					<div class="sunset-sunrise__value">...</div>
+					<div class="sunset-sunrise__value" id="sunset">...</div>
 				</div>
 			</section>
 		</div>

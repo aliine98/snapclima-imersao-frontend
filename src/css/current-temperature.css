@@ -5,12 +5,18 @@
    display: flex;
    flex-flow: column wrap;
    justify-content: center;
-   margin-bottom: 4em;
+   margin: 4em 0;
+}
+
+.current-temperature__weather-icon {
+   margin-bottom: 1em;
 }
 
 .current-temperature__description {
    font-size: 1.4em;
    margin-bottom: 0.3em;
+   font-family: 'Ubuntu';
+   text-transform: capitalize;
 }
 
 .current-temperature__info-label {
@@ -19,7 +25,7 @@
    line-height: 0.1;
 }
 
-.current-temperature__current-temperature {
+.current-temperature__value {
    color: var(--primary);
    font-size: 1.4em;
    font-weight: 700;
@@ -31,6 +37,6 @@
    color: var(--light-gray);
 }
 
-.dark-mode .current-temperature__current-temperature {
+.dark-mode .current-temperature__value {
    color: var(--primary-dark);
 }

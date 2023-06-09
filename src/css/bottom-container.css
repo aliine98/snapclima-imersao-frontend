@@ -36,7 +36,7 @@
 .temperature-details__value,
 .sunset-sunrise__value {
 	color: var(--primary);
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .temperature-details__item:nth-child(n+1):nth-child(-n+2),
