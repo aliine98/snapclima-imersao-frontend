@@ -135,6 +135,10 @@
 	filter: invert(41%) sepia(12%) saturate(6919%) hue-rotate(246deg) brightness(100%) contrast(103%);
 }
 
+.dark-mode .header__city-search-bar {
+	filter: none;
+}
+
 .dark-mode .header__input {
 	background: var(--gray);
 	caret-color: var(--primary-dark);

@@ -52,6 +52,7 @@
 
 .dark-mode .bottom-container {
 	background: var(--gray);
+	box-shadow: none;
 }
 
 .dark-mode .temperature-details__label {
