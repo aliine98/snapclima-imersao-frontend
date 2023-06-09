@@ -1,4 +1,5 @@
 import fetchCurrentWeather from "./fetchCurrentWeather.js";
+import { getSearchedCity } from "./getSearchedCity.js";
 
 const darkLightButton = document.querySelector(".menu__button");
 
@@ -14,3 +15,6 @@ if ("geolocation" in navigator) {
 		fetchCurrentWeather(latitude, longitude);
 	});
 }
+
+//Search button call function on click
+document.querySelector('.header__button').addEventListener('click', getSearchedCity);
