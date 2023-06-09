@@ -21,6 +21,7 @@ body {
 	margin: 0 auto;
 	transition: all 0.8s;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body.dark-mode {
