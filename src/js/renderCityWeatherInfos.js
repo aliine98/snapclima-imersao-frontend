@@ -1,3 +1,17 @@
+/**
+ * Renders the city weather information on the page.
+ *
+ * @param {object} params - An object containing the weather, main, sys, wind, dt, and name information.
+ * @param {array} params.weather - An array containing the weather description and icon.
+ * @param {object} params.main - An object containing the main weather information.
+ * @param {object} params.sys - An object containing the sunrise and sunset information.
+ * @param {object} params.wind - An object containing the wind speed information.
+ * @param {number} params.dt - The date and time in seconds.
+ * @param {string} params.name - The name of the city.
+ * @return {void} This function does not return anything.
+ *
+ * @author Aline Bevilacqua
+ */
 export function renderCityWeatherInfos({ weather, main, sys, wind, dt, name }) {
     const { description, icon } = weather[0];
     const { temp, feels_like, humidity } = main;
