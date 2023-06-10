@@ -17,7 +17,7 @@
 body {
 	background: var(--background);
 	font-family: "Inter", sans-serif;
-	max-width: 600px;
+	max-width: 900px;
 	margin: 0 auto;
 	transition: all 0.8s;
 	-webkit-font-smoothing: antialiased;
