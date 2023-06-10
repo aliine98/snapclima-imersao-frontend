@@ -3,9 +3,11 @@
 .current-temperature {
    align-items: center;
    display: flex;
-   flex-flow: column wrap;
+   flex-flow: column;
+   height: calc(100vh - 422px);
    justify-content: center;
-   margin: 4em 0;
+   margin-bottom: 40px;
+   min-height: 300px;
 }
 
 .current-temperature__weather-icon {
