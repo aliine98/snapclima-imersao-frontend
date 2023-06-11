@@ -4,6 +4,10 @@
   <a href="https://www.codefactor.io/repository/github/aliine98/snapclima-imersao-frontend"><img src="https://www.codefactor.io/repository/github/aliine98/snapclima-imersao-frontend/badge" alt="CodeFactor" /></a>
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Aliine98/snapclima-imersao-frontend?style=flat">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Aliine98/snapclima-imersao-frontend?color=magenta&style=flat">
+  <img alt="GitHub package.json dependency version (dev dep on branch)" src="https://img.shields.io/github/package-json/dependency-version/Aliine98/snapclima-imersao-frontend/dev/eslint?style=flat">
+  <a href="https://necolas.github.io/normalize.css/">
+    <img alt="GitHub package.json dependency version (dev dep on branch)" src="https://img.shields.io/github/package-json/dependency-version/Aliine98/snapclima-imersao-frontend/dev/normalize.css">
+  </a>
   <a href="https://www.linkedin.com/in/aline-bevilacqua/"><img alt="Linkedin URL" src="https://img.shields.io/twitter/url?label=Conecte-se comigo&logo=linkedin&style=social&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Faline-bevilacqua%2F"></a>
 </p>
 
