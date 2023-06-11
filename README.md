@@ -33,13 +33,12 @@ Projeto iniciado no evento de programação "Imersão carreira front-end" do Bre
 
 ## 🎨 Screenshots
 
-🚧🚧
 <details>
   <summary>Desktop:</summary>
   <p>Dark Mode:</p>
-  <img src="" width="800">
+  <img src="https://github.com/Aliine98/snapclima-imersao-frontend/assets/90913523/860e51a2-ebb2-4ea0-86d1-f4dc571aef0d" width="800">
   <p>Light Mode:</p>
-  <img src="" width="800">
+  <img src="https://github.com/Aliine98/snapclima-imersao-frontend/assets/90913523/f755c80e-a225-43df-ab71-8c9b89f7322c" width="800">
 </details>
 
 <details>
