@@ -10,15 +10,19 @@ import fetchCurrentWeather from "./fetchCurrentWeather.js";
  * @author Aline Bevilacqua
  */
 export async function getSearchedCity() {
-    const city = document.querySelector(".header__input").value;
+    try {
+        const city = document.querySelector(".header__input").value;
 
-    //Get lat and lon of the city from Geocoding API
-    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`);
-    const data = await response.json();
-    const { lat, lon } = data[0];
+        //Get lat and lon of the city from Geocoding API
+        const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`);
+        const data = await response.json();
+        const [{ lat, lon }] = data;
 
-    //Clear search input
-    document.querySelector(".header__input").value = "";
+        //Clear search input
+        document.querySelector(".header__input").value = "";
 
-    fetchCurrentWeather(lat, lon);
+        fetchCurrentWeather(lat, lon);
+    } catch (error) {
+        console.log(error);
+    }
 }
