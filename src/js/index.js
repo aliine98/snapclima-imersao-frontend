@@ -18,3 +18,8 @@ if ("geolocation" in navigator) {
 
 //Search button call function on click
 document.querySelector(".header__button").addEventListener("click", getSearchedCity);
+
+//Call the function upon pressing enter
+document.querySelector(".header__input").addEventListener("keyup", (e) => {
+    if (e.key === "Enter") getSearchedCity();
+});
