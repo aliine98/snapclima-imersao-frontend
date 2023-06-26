@@ -1,5 +1,7 @@
 # <p align="center">☀ SnapClima 🌥</p>
 
+<p align="center">Deploy: https://aliine98.github.io/snapclima-imersao-frontend/</p>
+
 <p align="center">
   <a href="https://www.codefactor.io/repository/github/aliine98/snapclima-imersao-frontend"><img src="https://www.codefactor.io/repository/github/aliine98/snapclima-imersao-frontend/badge" alt="CodeFactor" /></a>
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Aliine98/snapclima-imersao-frontend?style=flat">
@@ -58,6 +60,7 @@ Projeto iniciado no evento de programação "Imersão carreira front-end" do Bre
 - ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 - ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 - ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- <a href="https://openweathermap.org/"><img alt="OpenWeather API" src="https://img.shields.io/badge/OpenWeather_API-eb6e4c?style=for-the-badge&logoColor=white"></a>
 
 
 ## 🚀 Rodando localmente
@@ -105,7 +108,7 @@ Utilize o comando abaixo para saber mais sobre o http-server:
 
 ## 📝 Licença
 
-![License](https://img.shields.io/github/license/Aliine98/snapclima-imersao-frontend?logo=m&style=for-the-badge)
+[![License](https://img.shields.io/github/license/Aliine98/snapclima-imersao-frontend?logo=m&style=for-the-badge)](LICENSE.txt)
 
 Feito com ❤️ por <a href="https://github.com/Aliine98"><strong>Aline Bevilacqua</strong></a>!
 <br><br>
