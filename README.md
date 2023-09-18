@@ -1,4 +1,4 @@
-<div align="center"><img src="https://github.com/Aliine98/snapclima-imersao-frontend/assets/90913523/a772844b-31fc-4097-b94f-2e2373af8190" width="800"></div>
+<div align="center"><img src="https://github.com/aliine98/snapclima-imersao-frontend/assets/90913523/f756b4fa-2b1d-4236-9422-f0eebd1b9efa" width="800"></div>
 
 
 # <p align="center">☀ SnapClima 🌥</p>
