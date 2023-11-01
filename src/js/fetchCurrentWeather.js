@@ -1,5 +1,6 @@
-require('dotenv').config();
 import { renderCityWeatherInfos } from './renderCityWeatherInfos.js';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 /**
  * Returns the current weather info for a given latitude and longitude.

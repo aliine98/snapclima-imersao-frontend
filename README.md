@@ -1,4 +1,4 @@
-<div align="center"><img src="https://github.com/Aliine98/snapclima-imersao-frontend/assets/90913523/a772844b-31fc-4097-b94f-2e2373af8190" width="800"></div>
+<div align="center"><img src="https://github.com/aliine98/snapclima-imersao-frontend/assets/90913523/f756b4fa-2b1d-4236-9422-f0eebd1b9efa" width="800"></div>
 
 
 # <p align="center">☀ SnapClima 🌥</p>
@@ -7,6 +7,7 @@
 
 <p align="center">
   <a href="https://www.codefactor.io/repository/github/aliine98/snapclima-imersao-frontend"><img src="https://www.codefactor.io/repository/github/aliine98/snapclima-imersao-frontend/badge" alt="CodeFactor" /></a>
+  <a href="https://snyk.io/test/github/Aliine98/snapclima-imersao-frontend"><img src="https://snyk.io/test/github/Aliine98/snapclima-imersao-frontend/badge.svg"></a>
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Aliine98/snapclima-imersao-frontend?style=flat">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Aliine98/snapclima-imersao-frontend?color=magenta&style=flat">
   <img alt="GitHub package.json dependency version (dev dep on branch)" src="https://img.shields.io/github/package-json/dependency-version/Aliine98/snapclima-imersao-frontend/dev/eslint?style=flat">

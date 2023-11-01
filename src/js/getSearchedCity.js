@@ -1,5 +1,6 @@
-import { API_KEY } from "./API_KEY.js";
-import fetchCurrentWeather from "./fetchCurrentWeather.js";
+import * as dotenv from 'dotenv';
+import fetchCurrentWeather from './fetchCurrentWeather.js';
+dotenv.config();
 
 /**
  * Asynchronously gets the latitude and longitude of the searched city using the Geocoding API
@@ -11,17 +12,17 @@ import fetchCurrentWeather from "./fetchCurrentWeather.js";
  */
 export async function getSearchedCity() {
     try {
-        const city = document.querySelector(".header__input").value;
+        const city = document.querySelector('.header__input').value;
         //Check if the city is empty
         if (!city) return;
 
         //Get lat and lon of the city from Geocoding API
-        const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`);
+        const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${process.env.API_KEY}`);
         const data = await response.json();
         const [{ lat, lon }] = data;
 
         //Clear search input
-        document.querySelector(".header__input").value = "";
+        document.querySelector('.header__input').value = '';
 
         fetchCurrentWeather(lat, lon);
     } catch (error) {
