@@ -1,6 +1,5 @@
-import * as dotenv from 'dotenv';
+import { API_KEY } from './api-key.js';
 import fetchCurrentWeather from './fetchCurrentWeather.js';
-dotenv.config();
 
 /**
  * Asynchronously gets the latitude and longitude of the searched city using the Geocoding API
@@ -17,7 +16,7 @@ export async function getSearchedCity() {
         if (!city) return;
 
         //Get lat and lon of the city from Geocoding API
-        const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${process.env.API_KEY}`);
+        const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`);
         const data = await response.json();
         const [{ lat, lon }] = data;
 

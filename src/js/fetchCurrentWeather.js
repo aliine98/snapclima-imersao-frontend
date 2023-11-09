@@ -1,6 +1,5 @@
 import { renderCityWeatherInfos } from './renderCityWeatherInfos.js';
-import * as dotenv from 'dotenv';
-dotenv.config();
+import { API_KEY } from './api-key.js';
 
 /**
  * Returns the current weather info for a given latitude and longitude.
@@ -14,7 +13,7 @@ dotenv.config();
 export default async function fetchCurrentWeather(latitude, longitude) {
     try {
         const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.API_KEY}&units=metric&lang=pt_br`
+            `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric&lang=pt_br`
         );
         const data = await response.json();
         renderCityWeatherInfos(data);
