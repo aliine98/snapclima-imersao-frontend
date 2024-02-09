@@ -6,6 +6,6 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.2"
   }
 }
